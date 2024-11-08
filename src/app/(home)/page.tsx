@@ -15,7 +15,8 @@ export default function Home() {
 
       {status === 'authenticated' ? (
         <>
-          <Typography variant="h4">Vitaj späť, {session?.user?.name}!</Typography> {/* Using session here */}
+          <Typography variant="h4">Vitaj späť, {session?.user?.name}!</Typography> {/* Display user's name */}
+          <Typography variant="body1">Tvoj email: {session?.user?.email}</Typography> {/* Display user's email */}
           <Typography variant="body1">Tu sú novinky pre teba.</Typography>
           {/* Additional content for logged-in users */}
         </>
